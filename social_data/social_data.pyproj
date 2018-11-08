@@ -35,12 +35,24 @@
     <Compile Include="social_data\settings.py" />
     <Compile Include="social_data\urls.py" />
     <Compile Include="social_data\wsgi.py" />
+    <Compile Include="twitter_search\admin.py" />
+    <Compile Include="twitter_search\apps.py" />
+    <Compile Include="twitter_search\migrations\__init__.py" />
+    <Compile Include="twitter_search\models.py" />
+    <Compile Include="twitter_search\tests.py" />
+    <Compile Include="twitter_search\views.py" />
+    <Compile Include="twitter_search\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="twitter_search\templates\twitter_search\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="social_data\" />
+    <Folder Include="twitter_search\" />
+    <Folder Include="twitter_search\migrations\" />
+    <Folder Include="twitter_search\templates\" />
+    <Folder Include="twitter_search\templates\twitter_search\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
