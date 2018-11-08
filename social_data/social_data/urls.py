@@ -18,6 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('twitter_search', include('twitter_search.urls', 
+    path('twitter_search/', include('twitter_search.urls', 
                      namespace='twitter_search')),
 ]

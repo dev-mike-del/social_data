@@ -13,10 +13,9 @@ def get_screen_name(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/admin/')
-
+            return HttpResponseRedirect('../admin/')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = Screen_Name_Form()
 
-    return render(request, 'twitter_search.html', {'form': form})
+    return render(request, 'twitter_search/twitter_search.html', {'form': form})
