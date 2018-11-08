@@ -21,3 +21,7 @@ def get_screen_name(request):
     return render(request,
                   'twitter_search/twitter_search.html',
                   {'form': form})
+
+def get_twitter_profile(request):
+    return render(request,
+                  'twitter_search/twitter_profile.html')
