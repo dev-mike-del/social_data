@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="twitter_search\templates\twitter_search\index.html" />
+    <Content Include="twitter_search\templates\twitter_search\twitter_search.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="social_data\" />

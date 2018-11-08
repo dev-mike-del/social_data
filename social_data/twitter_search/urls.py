@@ -14,12 +14,14 @@ Including another URLconf
 """
 from django.urls import path
 
+from .views import get_screen_name
+
 app_name = 'twitter_search'
 
 urlpatterns = [
     path(
         'twitter_search',
-        Following_Story_List.as_view(),
-        name="following_story_list"
+        get_screen_name,
+        name="twitter_search"
     ),
 ]
