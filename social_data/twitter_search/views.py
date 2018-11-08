@@ -18,4 +18,6 @@ def get_screen_name(request):
     else:
         form = Screen_Name_Form()
 
-    return render(request, 'twitter_search/twitter_search.html', {'form': form})
+    return render(request,
+                  'twitter_search/twitter_search.html',
+                  {'form': form})
