@@ -37,6 +37,9 @@
     <Compile Include="social_data\wsgi.py" />
     <Compile Include="twitter_search\admin.py" />
     <Compile Include="twitter_search\apps.py" />
+    <Compile Include="twitter_search\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="twitter_search\migrations\__init__.py" />
     <Compile Include="twitter_search\models.py" />
     <Compile Include="twitter_search\urls.py">
