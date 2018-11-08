@@ -2,4 +2,4 @@
 from django import forms
 
 class Screen_Name_Form(forms.Form):
-    your_name = forms.CharField(label='Your name', max_length=100)
+    screen_name = forms.CharField(label='Screen Name', max_length=100)
