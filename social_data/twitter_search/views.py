@@ -13,7 +13,7 @@ def get_screen_name(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('../admin/')
+            return HttpResponseRedirect('/twitter_profile_data')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = Screen_Name_Form()
