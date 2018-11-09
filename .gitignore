@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 /social_data/env
 /social_data/db.sqlite3
+/social_data/twitter_search/twitter_api/keys_and_tokens.py

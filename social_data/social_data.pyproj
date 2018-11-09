@@ -42,6 +42,9 @@
     </Compile>
     <Compile Include="twitter_search\migrations\__init__.py" />
     <Compile Include="twitter_search\models.py" />
+    <Compile Include="twitter_search\twitter_api\keys_and_tokens.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="twitter_search\twitter_api\search_twitter_profile.py">
       <SubType>Code</SubType>
     </Compile>
