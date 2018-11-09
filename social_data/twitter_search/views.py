@@ -24,8 +24,9 @@ def get_screen_name(request):
                   {'form': form})
 
 def get_twitter_profile(request):
+    # Get data from request.session
     screen_name = request.session.get('screen_name')
-    print(f"GET_TWITTER_PROFILE view for {screen_name}")
     return render(request,
-                  'twitter_search/twitter_profile.html')
+                  'twitter_search/twitter_profile.html',
+                  context = {"screen_name":screen_name})
 
