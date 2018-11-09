@@ -51,6 +51,9 @@
     <Compile Include="twitter_search\twitter_api\search_twitter_profile_followers.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="twitter_search\twitter_api\search_twitter_profile_timeline.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="twitter_search\twitter_api\twitter_api_verification.py">
       <SubType>Code</SubType>
     </Compile>
