@@ -39,13 +39,13 @@ Twitter API Response: {}
                     )
                 )
 
-                user_lookup_results += requests.get(user_lookup_search_url,auth=auth).json()
+                user_lookup_results += requests.get(user_lookup_search_url, auth=auth).json()
 
-            return(user_lookup_results)
+            return user_lookup_results
 
     else:
         pass
 
 
 if __name__ == "__main__":
-    search_twitter_profile_followers("dev_mike_del")
+    search_twitter_profile_followers('dev_mike_del')

@@ -5,6 +5,7 @@ import requests
 
 from .twitter_api_verification import auth
 
+
 def search_twitter_profile_timeline(screen_name=False, number_of_tweets=1):
 	if screen_name is not False:
 		search_twitter_profile_timeline_url = (
