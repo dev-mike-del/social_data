@@ -1,14 +1,12 @@
-import sys
-sys.path.insert(0,
-                '''/c/Users/dev_m/source/repos/social_data/social_data/twitter_search/twitter_api/search_twitter_profile.py'''
-)
-
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-
 from .forms import Screen_Name_Form
+
+from .search_twitter_profile import search_twitter_profile
+from .search_twitter_profile_followers import search_twitter_profile_followers
+from .search_twitter_profile_timeline import search_twitter_profile_timeline
 
 def get_screen_name(request):
     # if this is a POST request we need to process the form data
@@ -32,7 +30,13 @@ def get_screen_name(request):
 def get_twitter_profile(request):
     # Get data from request.session
     screen_name = request.session.get('screen_name')
+    # API function
+    api_profile = search_twitter_profile(screen_name)
+    api_followers = search_twitter_profile_followers(screen_name)
+    api_timeline = search_twitter_profile_timeline(screen_name)
     return render(request,
                   'twitter_search/twitter_profile.html',
-                  context = {"screen_name":screen_name})
+                  context = {"api_profile":api_profile,
+                             "api_followers":api_followers,
+                             "api_timeline":api_timeline,})
 

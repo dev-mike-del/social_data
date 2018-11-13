@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
-import json
 import requests
 
-from twitter_api_verification import auth
+from .twitter_api_verification import auth
 
 def search_twitter_profile(screen_name=False):
 	if screen_name:
