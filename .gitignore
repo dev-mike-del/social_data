@@ -263,5 +263,6 @@ __pycache__/
 /social_data/db.sqlite3
 /social_data/twitter_search/keys_and_tokens.py
 /venv
+/env_social_data
 
 
